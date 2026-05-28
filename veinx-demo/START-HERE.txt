@@ -1,0 +1,26 @@
+VeinX — offline demo build
+===========================
+
+This is a fully static copy of the VeinX app. It needs to be served by a
+tiny local web server (opening index.html directly will NOT load styles).
+
+EASIEST WAY
+-----------
+Windows : double-click  serve.cmd
+Mac/Linux: run  ./serve.sh   (in Terminal, from this folder)
+
+Then open  http://localhost:8000  in your browser.
+For the cinematic, phone-framed view, go to  http://localhost:8000/present
+
+MANUAL (any OS with Python)
+---------------------------
+  python -m http.server 8000
+  # then open http://localhost:8000
+
+MANUAL (any OS with Node.js)
+----------------------------
+  npx serve -l 8000
+  # then open the URL it prints
+
+Tip: record the /present page — the whole app runs inside a phone frame
+with a scene picker and an adjustable phone size.
